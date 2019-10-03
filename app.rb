@@ -12,4 +12,5 @@ class App < Sinatra::Base
     "#{num_squared}"
   end
 
+  get '/say/:number/:phrase'
 end
