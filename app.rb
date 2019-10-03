@@ -6,4 +6,9 @@ class App < Sinatra::Base
     "#{@user_name}"
   end
 
+  get '/square/:number' do
+    @i = params[:number]
+    @i_squared = @i * @i
+  end
+
 end
